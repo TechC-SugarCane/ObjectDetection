@@ -127,3 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# sample file
+inference/
+figure/
+
+# dataset
+dataset/
+
+# scripts
+scripts/
+
+# yaml file
+coco.yaml
+
+traced_model.pt
+checkpoints/
+
+weights/
