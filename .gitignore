@@ -142,6 +142,8 @@ scripts/
 coco.yaml
 
 traced_model.pt
+
 checkpoints/
 
+# model file directory
 weights/

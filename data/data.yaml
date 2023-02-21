@@ -1,0 +1,13 @@
+train: ./dataset/train/
+val: ./dataset/val/
+test: ./dataset/test
+
+nc: 3
+names: ['root', 'sugarcane', 'weed']
+
+roboflow:
+  workspace: hoku-zhzvm
+  project: sugarcane-3vhxz
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/hoku-zhzvm/sugarcane-3vhxz/dataset/4
