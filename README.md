@@ -101,6 +101,15 @@ python train.py --workers 8 --batch-size 8 --data ../manage-dataset/datasets/sug
 python train.py --workers 8 --batch-size 8 --data ../manage-dataset/datasets/pineapple/data.yaml --cfg cfg/training/yolov7.yaml --weights weights/yolov7.pt --name yolov7-pineapple --hyp data/hyp.scratch.pineapple.yaml --epochs 250 --device 0
 ```
 
+## Export
+
+モデルをONNXにexportする際は下記コマンドを実行してください
+
+```sh
+# --weightsの<name(番号)>の部分は学習の結果が保存されているディレクトリ名にしてください。
+python export.py　--weights ./runs/train/<name(番号)>/weights/best.pt --grid --end2end --dynamic --max-wh 640 --device 0
+```
+
 ## コントリビューター向けガイドライン
 
 コントリビューター向けのガイドラインについては、こちらの[CONTRIBUTING.md](https://github.com/TechC-SugarCane/.github/blob/main/CONTRIBUTING.md)を参照してください。
